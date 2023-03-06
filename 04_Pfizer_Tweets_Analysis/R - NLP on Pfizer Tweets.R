@@ -16,11 +16,12 @@ library(ggplot2)
 library(syuzhet)
 library(tidytext)
 library(wordcloud)
+library(here)
 
 ## TASK 1 - IMPORTING THE TWEETS
 ##------------------------------------------------------------------------------
 
-pfizer.tweets.df <- read.csv("D:\\001_Data\\NLP\\R\\Pfizer Tweets\\vaccination_tweets.csv")
+pfizer.tweets.df <- read.csv(paste0(here(), "/04_Pfizer_Tweets_Analysis/vaccination_tweets.csv"))
 head(pfizer.tweets.df$text)
 pfizer.tweets.df2 <- pfizer.tweets.df$text
 
