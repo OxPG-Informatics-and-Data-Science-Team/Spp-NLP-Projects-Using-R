@@ -30,7 +30,7 @@ library(wordcloud)
 
 ## TASK 1 - IMPORTING THE TWEETS
 
-vaccine.myth.tweets.df <- read.csv("D:/001_Data/NLP/Reddit Vaccine Tweets/reddit_vm.csv")
+vaccine.myth.tweets.df <- read.csv(paste0(here(), "/03_Reddit_Vaccine_Tweets_Analysis/reddit_vm.csv"))
 head(vaccine.myth.tweets.df$body)
 vaccine.myth.tweets.df2 <- vaccine.myth.tweets.df$body
 
